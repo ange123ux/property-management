@@ -1,4 +1,3 @@
-SECRET_KEY = 'sym72kkcnc5bvcs%%31ozpf$=*akh5tq#0c@f6rx%-uou_ny+t'
 
 
 """
@@ -14,7 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import django_on_heroku
+# import django_on_heroku
 import dj_database_url
 from decouple import config,Csv
 
@@ -117,7 +116,7 @@ WSGI_APPLICATION = 'management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'property-management',
+        'NAME': 'propertymanagement',
         'USER': 'ange',
         'PASSWORD':'ange1997',
     }
@@ -148,7 +147,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Kigali'
 
 USE_I18N = True
 
@@ -170,7 +169,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     )
 }
-django_on_heroku.settings(locals())
+# django_on_heroku.settings(locals())
 
 
 
