@@ -113,14 +113,14 @@ WSGI_APPLICATION = 'management.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'propertymanagement',
-#         'USER': 'ange',
-#         'PASSWORD':'ange1997',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'propertymanagement',
+        'USER': 'ange',
+        'PASSWORD':'ange1997',
+    }
+}
 
 
 # Password validation
