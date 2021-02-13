@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-# import django_on_heroku
+import django_heroku
 import dj_database_url
 from decouple import config,Csv
 
@@ -113,14 +113,14 @@ WSGI_APPLICATION = 'management.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'propertymanagement',
-        'USER': 'ange',
-        'PASSWORD':'ange1997',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'propertymanagement',
+#         'USER': 'ange',
+#         'PASSWORD':'ange1997',
+#     }
+# }
 
 
 # Password validation
@@ -169,7 +169,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     )
 }
-# django_on_heroku.settings(locals())
+django_heroku.settings(locals())
 
 
 
